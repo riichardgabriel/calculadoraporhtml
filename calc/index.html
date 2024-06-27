@@ -6,6 +6,7 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
+
         div{
             background-color: rgb(80, 80, 80);
             position: absolute;
@@ -15,6 +16,7 @@
             padding: 130px;
             border-radius: 15px;
         }
+
     </style>
 </head>
 <body>
@@ -25,19 +27,27 @@
         
         <h3>Primeiro número:</h3>
         <input type="number" placeholder="coloque um número">
-        <br> <br>
+        <br>
         
         <h3>Escolha uma operação:</h3>
-        <br> <br>
+
+        <select>
+            <option value="adição"> Adição </option>
+            <option value="subtração"> Subtração </option>
+            <option value="multiplicação"> Multiplicação </option>
+            <option value="divisão"> Divisão </option>
+        </select>
         
         <h3>Segundo número:</h3>
         <input type="number" placeholder="coloque um número">
-        <br> <br>
+        <br>
         <hr>
 
-
+        <button onclick="calcular">Calcular</button>
         
-        <h1>Resultado:</h1>
+        <h1 id="calcular">Resultado:</h1>
+        <br>
+        
         <hr>
     </div>
 
